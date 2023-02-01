@@ -14,6 +14,6 @@ public class Item {
     private Integer Cantidad;
 
     public Double getTotal(){
-        return producto.getPrecio() * Cantidad.doubleValue();
+        return producto.getPrecio() * Cantidad;
     }
 }

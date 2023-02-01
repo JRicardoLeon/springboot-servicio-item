@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 // configuration = FeignAutoConfiguration.class
-@FeignClient(name = "servicio-productos", url = "http://localhost:8080")
+@FeignClient(name = "servicio-productos")
 public interface ProductoClienteRest {
     @RequestMapping(method = RequestMethod.GET, value = "/mostrar")
     public List<Producto> Mostrar();

@@ -19,4 +19,5 @@ public class ItemServiceFeign implements ITemService {
     public Item findById(Long id, Integer cantidad) {
         return new Item(productoClienteRest.detalle(id),cantidad);
     }
+
 }
